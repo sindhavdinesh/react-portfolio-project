@@ -28,10 +28,10 @@ const Textarea = ({
         style={{
           width: '100%',
           padding: '1rem',
-          background: 'rgba(255, 255, 255, 0.1)',
-          border: error ? '2px solid #ff4757' : '1px solid rgba(255, 255, 255, 0.2)',
+          background: 'var(--bg-input)',
+          border: error ? '2px solid #ff4757' : '1px solid var(--border)',
           borderRadius: 10,
-          color: 'white',
+          color: 'var(--text-primary)',
           fontSize: '1rem',
           resize: 'vertical',
           fontFamily: 'inherit'

@@ -34,7 +34,7 @@ const Skills = () => {
                 background: activeCategory === cat.id ? `linear-gradient(135deg, ${cat.color}, ${cat.color}cc)` : 'rgba(255, 255, 255, 0.05)',
                 border: activeCategory === cat.id ? 'none' : '1px solid rgba(255, 255, 255, 0.1)',
                 borderRadius: 50,
-                color: 'white',
+                color: activeCategory === cat.id ? 'white' : 'var(--text-secondary)',
                 cursor: 'pointer',
                 transition: 'all 0.3s'
               }}
