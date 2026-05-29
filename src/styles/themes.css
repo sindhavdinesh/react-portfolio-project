@@ -33,6 +33,23 @@
   --gallery-hint-bg: rgba(0, 243, 255, 0.06);
   --gallery-hint-border: rgba(0, 243, 255, 0.15);
   --shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+
+  /* Badge and Tag theme variables */
+  --tag-bg: rgba(229, 62, 62, 0.1);
+  --tag-border: rgba(229, 62, 62, 0.2);
+  --tag-text: #fca5a5;
+  --badge-comp-bg: rgba(229, 62, 62, 0.15);
+  --badge-comp-border: rgba(229, 62, 62, 0.4);
+  --badge-comp-text: #fc8181;
+  --badge-prof-bg: rgba(59, 130, 246, 0.15);
+  --badge-prof-border: rgba(59, 130, 246, 0.4);
+  --badge-prof-text: #93c5fd;
+  --badge-cloud-bg: rgba(245, 158, 11, 0.15);
+  --badge-cloud-border: rgba(245, 158, 11, 0.4);
+  --badge-cloud-text: #fcd34d;
+  --badge-acad-bg: rgba(52, 211, 153, 0.15);
+  --badge-acad-border: rgba(52, 211, 153, 0.4);
+  --badge-acad-text: #6ee7b7;
 }
 
 /* Light theme */
@@ -45,8 +62,8 @@
   --bg-input: rgba(0, 0, 0, 0.05);
   --text-primary: #12131f;
   --text-secondary: #1a1b2e;
-  --text-muted: #5a5d78;
-  --text-subtle: #6b6f85;
+  --text-muted: #35374a;
+  --text-subtle: #4f526b;
   --border: rgba(0, 0, 0, 0.1);
   --border-subtle: rgba(0, 0, 0, 0.06);
   --header-scrolled: rgba(255, 255, 255, 0.95);
@@ -69,6 +86,23 @@
   --gallery-hint-bg: rgba(0, 140, 170, 0.08);
   --gallery-hint-border: rgba(0, 120, 150, 0.25);
   --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+
+  /* Badge and Tag theme variables - light mode optimized for contrast */
+  --tag-bg: rgba(229, 62, 62, 0.08);
+  --tag-border: rgba(229, 62, 62, 0.2);
+  --tag-text: #b91c1c;
+  --badge-comp-bg: rgba(229, 62, 62, 0.08);
+  --badge-comp-border: rgba(229, 62, 62, 0.25);
+  --badge-comp-text: #b91c1c;
+  --badge-prof-bg: rgba(59, 130, 246, 0.08);
+  --badge-prof-border: rgba(59, 130, 246, 0.25);
+  --badge-prof-text: #1d4ed8;
+  --badge-cloud-bg: rgba(245, 158, 11, 0.08);
+  --badge-cloud-border: rgba(245, 158, 11, 0.3);
+  --badge-cloud-text: #b45309;
+  --badge-acad-bg: rgba(52, 211, 153, 0.08);
+  --badge-acad-border: rgba(52, 211, 153, 0.3);
+  --badge-acad-text: #047857;
 }
 
 .app-shell {

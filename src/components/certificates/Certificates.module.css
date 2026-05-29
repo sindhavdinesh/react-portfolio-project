@@ -20,8 +20,9 @@
   font-size: clamp(36px, 5vw, 56px);
   font-weight: 900;
   letter-spacing: 2px;
-  color: var(--color-text, #fff);
+  color: var(--text-primary);
   margin-bottom: 12px;
+  transition: color 0.35s ease;
 }
 
 .gradient {
@@ -37,7 +38,8 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 16px;
-  color: var(--color-text, #fff);
+  color: var(--text-muted);
+  transition: color 0.35s ease;
 }
 
 .divider {
@@ -59,12 +61,12 @@
 /* ===== CARD ===== */
 
 .card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.3s, transform 0.3s;
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
@@ -145,35 +147,40 @@
 }
 
 .competition {
-  background: rgba(229, 62, 62, 0.15);
-  border: 1px solid rgba(229, 62, 62, 0.4);
-  color: #fc8181;
+  background: var(--badge-comp-bg);
+  border: 1px solid var(--badge-comp-border);
+  color: var(--badge-comp-text);
+  transition: background 0.35s ease, border-color 0.35s ease, color 0.35s ease;
 }
 
 .professional {
-  background: rgba(59, 130, 246, 0.15);
-  border: 1px solid rgba(59, 130, 246, 0.4);
-  color: #93c5fd;
+  background: var(--badge-prof-bg);
+  border: 1px solid var(--badge-prof-border);
+  color: var(--badge-prof-text);
+  transition: background 0.35s ease, border-color 0.35s ease, color 0.35s ease;
 }
 
 .cloud {
-  background: rgba(245, 158, 11, 0.15);
-  border: 1px solid rgba(245, 158, 11, 0.4);
-  color: #fcd34d;
+  background: var(--badge-cloud-bg);
+  border: 1px solid var(--badge-cloud-border);
+  color: var(--badge-cloud-text);
+  transition: background 0.35s ease, border-color 0.35s ease, color 0.35s ease;
 }
 
 .academic {
-  background: rgba(52, 211, 153, 0.15);
-  border: 1px solid rgba(52, 211, 153, 0.4);
-  color: #6ee7b7;
+  background: var(--badge-acad-bg);
+  border: 1px solid var(--badge-acad-border);
+  color: var(--badge-acad-text);
+  transition: background 0.35s ease, border-color 0.35s ease, color 0.35s ease;
 }
 
 .cardTitle {
   font-size: 17px;
   font-weight: 700;
   margin-bottom: 6px;
-  color: var(--color-text, #fff);
+  color: var(--text-primary);
   line-height: 1.35;
+  transition: color 0.35s ease;
 }
 
 .issuer {
@@ -186,11 +193,12 @@
 
 .desc {
   font-size: 13px;
-  opacity: 0.55;
+  opacity: 0.75;
   line-height: 1.6;
   flex: 1;
   margin-bottom: 20px;
-  color: var(--color-text, #fff);
+  color: var(--text-muted);
+  transition: color 0.35s ease;
 }
 
 .footer {
@@ -203,9 +211,10 @@
 
 .date {
   font-size: 12px;
-  opacity: 0.5;
+  opacity: 0.7;
   letter-spacing: 0.5px;
-  color: var(--color-text, #fff);
+  color: var(--text-subtle);
+  transition: color 0.35s ease;
 }
 
 .viewBtn {

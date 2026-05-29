@@ -1,14 +1,14 @@
 
 /* ===== CARD ===== */
 .card {
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--bg-card);
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   position: relative;
-  transition: border-color 0.35s, box-shadow 0.35s;
+  transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
   backdrop-filter: blur(8px);
 }
 
@@ -119,16 +119,18 @@
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   font-weight: 800;
   margin: 0;
-  color: var(--color-text, #fff);
+  color: var(--text-primary);
   line-height: 1.3;
+  transition: color 0.35s ease;
 }
 
 .desc {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-muted);
   margin: 0;
   line-height: 1.6;
   font-size: 0.9rem;
   flex: 1;
+  transition: color 0.35s ease;
 }
 
 /* ===== TECH TAGS ===== */
@@ -140,14 +142,15 @@
 
 .tag {
   padding: 3px 10px;
-  background: rgba(229, 62, 62, 0.1);
-  border: 1px solid rgba(229, 62, 62, 0.2);
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
   border-radius: 30px;
   font-size: 11px;
   font-weight: 600;
-  color: #fca5a5;
+  color: var(--tag-text);
   letter-spacing: 0.3px;
   text-transform: uppercase;
+  transition: background 0.35s ease, border-color 0.35s ease, color 0.35s ease;
 }
 
 /* ===== BUTTON ROW ===== */
@@ -180,17 +183,17 @@
 
 /* GitHub button — dark with white border */
 .btnGithub {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #fff;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
 }
 
 .btnGithub:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.35);
+  background: var(--bg-elevated);
+  border-color: var(--text-muted);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  color: #fff;
+  box-shadow: var(--shadow);
+  color: var(--text-primary);
 }
 
 /* Live Demo button — red gradient */
@@ -210,9 +213,10 @@
 
 /* Disabled / Coming soon */
 .btnDisabled {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  color: rgba(255, 255, 255, 0.25);
+  background: var(--bg-input);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-subtle);
+  opacity: 0.4;
   cursor: not-allowed;
 }
 
