@@ -19,7 +19,7 @@
 
 <br/>
 
-### 🌐 [**View Live Portfolio**](https://void-by-sindhav.vercel.app/) &nbsp;•&nbsp; 📦 [**GitHub Repo**](https://github.com/sindhavdinesh/react-portfolio-)
+### 🌐 [**View Live Portfolio**](https://void-by-sindhav.vercel.app/) &nbsp;•&nbsp; 📦 [**GitHub Repo**](https://github.com/sindhavdinesh/react-portfolio-project)
 
 <br/>
 
