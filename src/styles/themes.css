@@ -1,0 +1,88 @@
+/* Dark theme (default) */
+:root,
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg-primary: #0b0d1f;
+  --bg-secondary: #05050f;
+  --bg-elevated: rgba(255, 255, 255, 0.03);
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --bg-input: rgba(255, 255, 255, 0.05);
+  --text-primary: #f8f8ff;
+  --text-secondary: #ffffff;
+  --text-muted: #a0a0c0;
+  --text-subtle: #888888;
+  --border: rgba(255, 255, 255, 0.1);
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --header-scrolled: rgba(11, 13, 31, 0.95);
+  --header-mobile: rgba(11, 13, 31, 0.98);
+  --toggle-bg: rgba(255, 255, 255, 0.1);
+  --toggle-hover: rgba(0, 243, 255, 0.2);
+  --hero-ring-border: #0b0d1f;
+  --hero-panel: rgba(18, 20, 38, 0.92);
+  --skills-bg: radial-gradient(ellipse at 50% 0%, #0d1f28 0%, #060a0e 55%, #040608 100%);
+  --skills-bubble-bg: rgba(8, 18, 24, 0.85);
+  --skills-bubble-border: rgba(0, 243, 255, 0.35);
+  --scrollbar-track: #0a0a2a;
+  --loader-bg: #05050f;
+  --media-bg: #0b0d1f;
+  --gallery-tab-bg: rgba(255, 255, 255, 0.05);
+  --gallery-tab-color: #f8f8ff;
+  --gallery-tab-active-bg: linear-gradient(135deg, rgba(0, 243, 255, 0.2), rgba(255, 0, 228, 0.15));
+  --gallery-tab-active-color: #00f3ff;
+  --gallery-tab-active-border: rgba(0, 243, 255, 0.5);
+  --gallery-hint-bg: rgba(0, 243, 255, 0.06);
+  --gallery-hint-border: rgba(0, 243, 255, 0.15);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* Light theme */
+[data-theme='light'] {
+  color-scheme: light;
+  --bg-primary: #f4f6fb;
+  --bg-secondary: #ffffff;
+  --bg-elevated: rgba(0, 0, 0, 0.04);
+  --bg-card: rgba(0, 0, 0, 0.04);
+  --bg-input: rgba(0, 0, 0, 0.05);
+  --text-primary: #12131f;
+  --text-secondary: #1a1b2e;
+  --text-muted: #5a5d78;
+  --text-subtle: #6b6f85;
+  --border: rgba(0, 0, 0, 0.1);
+  --border-subtle: rgba(0, 0, 0, 0.06);
+  --header-scrolled: rgba(255, 255, 255, 0.95);
+  --header-mobile: rgba(255, 255, 255, 0.98);
+  --toggle-bg: rgba(0, 0, 0, 0.06);
+  --toggle-hover: rgba(0, 150, 180, 0.15);
+  --hero-ring-border: #e8eaf2;
+  --hero-panel: rgba(255, 255, 255, 0.95);
+  --skills-bg: radial-gradient(ellipse at 50% 0%, #e8f4f8 0%, #f4f6fb 55%, #eef1f8 100%);
+  --skills-bubble-bg: rgba(255, 255, 255, 0.95);
+  --skills-bubble-border: rgba(0, 160, 190, 0.45);
+  --scrollbar-track: #e2e6ef;
+  --loader-bg: #f4f6fb;
+  --media-bg: #f4f6fb;
+  --gallery-tab-bg: #ffffff;
+  --gallery-tab-color: #1a1b2e;
+  --gallery-tab-active-bg: linear-gradient(135deg, rgba(0, 140, 170, 0.14), rgba(120, 0, 140, 0.1));
+  --gallery-tab-active-color: #006d87;
+  --gallery-tab-active-border: rgba(0, 120, 150, 0.55);
+  --gallery-hint-bg: rgba(0, 140, 170, 0.08);
+  --gallery-hint-border: rgba(0, 120, 150, 0.25);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background 0.35s ease, color 0.35s ease;
+}
+
+.page-shell {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background 0.35s ease, color 0.35s ease;
+}

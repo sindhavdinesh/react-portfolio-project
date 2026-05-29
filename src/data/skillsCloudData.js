@@ -1,0 +1,33 @@
+import {
+  SiTensorflow,
+  SiOpencv,
+  SiPython,
+  SiJavascript,
+  SiCplusplus,
+  SiPytorch,
+  SiOpenjdk,
+  SiGit,
+  SiHtml5,
+  SiMongodb,
+  SiCss,
+  SiMysql,
+  SiReact,
+  SiC,
+} from 'react-icons/si';
+
+export const skillBubbles = [
+  { id: 'tensorflow', label: 'TensorFlow', Icon: SiTensorflow, color: '#FF6F00', top: '8%', left: '6%', size: 'md', delay: 0 },
+  { id: 'opencv', label: 'OpenCV', Icon: SiOpencv, color: '#5C3EE8', top: '22%', left: '18%', size: 'sm', delay: 0.1 },
+  { id: 'python', label: 'Python', Icon: SiPython, color: '#3776AB', top: '42%', left: '4%', size: 'md', delay: 0.2 },
+  { id: 'js', label: 'JavaScript', Icon: SiJavascript, color: '#F7DF1E', top: '58%', left: '14%', size: 'md', delay: 0.15 },
+  { id: 'cpp', label: 'C++', Icon: SiCplusplus, color: '#00599C', top: '72%', left: '28%', size: 'sm', delay: 0.25 },
+  { id: 'pytorch', label: 'PyTorch', Icon: SiPytorch, color: '#EE4C2C', top: '12%', left: '38%', size: 'sm', delay: 0.3 },
+  { id: 'java', label: 'Java', Icon: SiOpenjdk, color: '#ED8B00', top: '28%', left: '52%', size: 'md', delay: 0.05 },
+  { id: 'git', label: 'Git', Icon: SiGit, color: '#F05032', top: '48%', left: '42%', size: 'sm', delay: 0.35 },
+  { id: 'html', label: 'HTML', Icon: SiHtml5, color: '#E34F26', top: '62%', left: '55%', size: 'md', delay: 0.2 },
+  { id: 'mongodb', label: 'MongoDB', Icon: SiMongodb, color: '#47A248', top: '78%', left: '48%', size: 'sm', delay: 0.4 },
+  { id: 'css', label: 'CSS', Icon: SiCss, color: '#1572B6', top: '18%', left: '68%', size: 'md', delay: 0.12 },
+  { id: 'mysql', label: 'MySQL', Icon: SiMysql, color: '#4479A1', top: '38%', left: '78%', size: 'sm', delay: 0.28 },
+  { id: 'react', label: 'React', Icon: SiReact, color: '#61DAFB', top: '55%', left: '72%', size: 'md', delay: 0.18 },
+  { id: 'c', label: 'C', Icon: SiC, color: '#A8B9CC', top: '6%', left: '82%', size: 'lg', delay: 0.08 },
+];

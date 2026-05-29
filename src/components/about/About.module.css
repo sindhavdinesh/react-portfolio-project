@@ -1,0 +1,142 @@
+.about {
+  padding: 100px 20px;
+  background: #0f0f1e;
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 700px;
+}
+
+.skills {
+  padding: 30px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.skills h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #667eea;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skillTag {
+  padding: 8px 16px;
+  background: rgba(102, 126, 234, 0.2);
+  border: 1px solid rgba(102, 126, 234, 0.4);
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.skillTag:hover {
+  background: rgba(102, 126, 234, 0.3);
+  border-color: #667eea;
+  transform: translateY(-2px);
+}
+
+.experience {
+  padding: 30px;
+  background: rgba(118, 75, 162, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(118, 75, 162, 0.2);
+}
+
+.experience h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #764ba2;
+}
+
+.experienceItem {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(118, 75, 162, 0.2);
+}
+
+.experienceItem:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.experienceItem h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.company {
+  font-size: 14px;
+  color: #667eea;
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+}
+
+.details {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 20px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .skillsList {
+    gap: 10px;
+  }
+
+  .skillTag {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

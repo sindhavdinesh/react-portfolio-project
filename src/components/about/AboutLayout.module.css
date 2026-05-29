@@ -1,0 +1,241 @@
+.about {
+  padding: clamp(5.5rem, 12vw, 8rem) 0 clamp(2.5rem, 6vw, 4rem);
+}
+
+.embedded {
+  padding-top: clamp(3rem, 8vw, 4.5rem);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 4vw, 2rem);
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.pageTitle {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 700;
+  margin: 0 0 1rem;
+  background: linear-gradient(135deg, #00f3ff, #ff00e4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.2;
+}
+
+.pageSubtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin: 0;
+  font-size: clamp(0.95rem, 2.8vw, 1.05rem);
+}
+
+.mainGrid {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.panel {
+  background: var(--bg-elevated);
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+
+.intro {
+  font-size: clamp(1rem, 3vw, 1.1rem);
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: clamp(1.25rem, 3vw, 2rem);
+}
+
+.intro strong {
+  color: #00f3ff;
+}
+
+[data-theme='light'] .intro strong {
+  color: #006d87;
+}
+
+.featuresRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(0.75rem, 2vw, 1rem);
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+@media (min-width: 768px) {
+  .featuresRow {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.featureCard {
+  padding: clamp(0.85rem, 2.5vw, 1rem);
+  background: rgba(0, 243, 255, 0.05);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.featureIcon {
+  font-size: clamp(1.25rem, 4vw, 1.5rem);
+  color: #00f3ff;
+  margin-bottom: 0.5rem;
+}
+
+.featureTitle {
+  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+  margin: 0 0 0.3rem;
+  color: var(--text-primary);
+}
+
+.featureDesc {
+  font-size: clamp(0.75rem, 2.2vw, 0.8rem);
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.sectionHeading {
+  font-size: clamp(1.1rem, 3.5vw, 1.3rem);
+  margin-bottom: 1.5rem;
+  color: #00f3ff;
+}
+
+.sectionHeadingPink {
+  font-size: clamp(1.1rem, 3.5vw, 1.3rem);
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  color: #ff00e4;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timelineLineCyan {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #00f3ff, #ff00e4);
+}
+
+.timelineLinePink {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #ff00e4, #7000ff);
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timelineDotCyan {
+  position: absolute;
+  left: -2.25rem;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: #00f3ff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00f3ff;
+}
+
+.timelineDotPink {
+  position: absolute;
+  left: -2.25rem;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: #ff00e4;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ff00e4;
+}
+
+.timelineContent {
+  padding-left: 1rem;
+}
+
+.timelinePeriodCyan {
+  font-size: 0.85rem;
+  color: #00f3ff;
+  margin-bottom: 0.3rem;
+}
+
+.timelinePeriodPink {
+  font-size: 0.85rem;
+  color: #ff00e4;
+  margin-bottom: 0.3rem;
+}
+
+.timelineCompany {
+  font-size: clamp(1rem, 3vw, 1.1rem);
+  margin: 0 0 0.2rem;
+  color: var(--text-primary);
+}
+
+.timelineRole {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0 0 0.5rem;
+  font-weight: 500;
+}
+
+.timelineDesc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.techTag {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  background: rgba(0, 243, 255, 0.1);
+  border-radius: 50px;
+  color: #00f3ff;
+}
+
+@media (min-width: 968px) {
+  .mainGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+}
+
+@media (max-width: 480px) {
+  .featuresRow {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timelineDotCyan,
+  .timelineDotPink {
+    left: -1.85rem;
+  }
+}

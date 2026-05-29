@@ -1,0 +1,369 @@
+/* Hero — circular image + name orbiting in circle */
+.hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 5.5rem 0 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  background: rgba(0, 243, 255, 0.1);
+  border: 1px solid rgba(0, 243, 255, 0.3);
+  border-radius: 50px;
+  font-size: clamp(0.75rem, 2.5vw, 0.9rem);
+  color: #00f3ff;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: clamp(1.75rem, 7vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.gradientText {
+  background: linear-gradient(135deg, #00f3ff 0%, #ff00e4 50%, #7000ff 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.typedContainer {
+  margin-bottom: 1rem;
+  min-height: 2rem;
+}
+
+.typedText {
+  font-size: clamp(1rem, 4.5vw, 1.8rem);
+  color: #00f3ff;
+  font-weight: 500;
+}
+
+.bio {
+  font-size: clamp(0.9rem, 3.2vw, 1.1rem);
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  padding: 0.7rem 1.35rem;
+  border-radius: 50px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: clamp(0.85rem, 3vw, 1rem);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 44px;
+}
+
+.primaryBtn {
+  background: linear-gradient(135deg, #00f3ff, #7000ff);
+  color: white;
+  border: none;
+}
+
+.secondaryBtn {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.socialLinks a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+/* —— Circular photo + skill icons —— */
+.visual {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.heroVisual {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.orbitStage {
+  --img-size: clamp(168px, 46vw, 240px);
+  position: relative;
+  width: calc(var(--img-size) + 120px);
+  height: calc(var(--img-size) + 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillOrbit {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.skillBadge {
+  position: absolute;
+  z-index: 3;
+}
+
+.skillFloat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillIconWrap {
+  width: clamp(42px, 11vw, 52px);
+  height: clamp(42px, 11vw, 52px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.35rem, 4vw, 1.75rem);
+  background: var(--hero-panel);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.45),
+    0 0 16px rgba(0, 243, 255, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Icon positions around circle — demo layout */
+.posHtml {
+  top: 2%;
+  left: 6%;
+}
+
+.posCss {
+  top: 0%;
+  right: 4%;
+}
+
+.posJs {
+  top: 38%;
+  right: -2%;
+}
+
+.posReact {
+  bottom: 6%;
+  right: 8%;
+}
+
+.posNode {
+  bottom: 4%;
+  left: 4%;
+}
+
+@keyframes orbitSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Circular profile image */
+.imageWrapper {
+  position: relative;
+  z-index: 1;
+  width: var(--img-size);
+  height: var(--img-size);
+  margin: 0;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, #00f3ff, #7000ff, #ff00e4);
+  box-shadow:
+    0 0 40px rgba(0, 243, 255, 0.25),
+    0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+.imageGlow {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 243, 255, 0.35) 0%, transparent 68%);
+  filter: blur(14px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.imageRing {
+  position: absolute;
+  inset: -14px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 243, 255, 0.35);
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.15);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.profileImg {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  border: 3px solid var(--hero-ring-border);
+  pointer-events: none;
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+    gap: 2.5rem;
+  }
+
+  .orbitStage {
+    --img-size: clamp(200px, 36vw, 260px);
+    width: calc(var(--img-size) + 130px);
+    height: calc(var(--img-size) + 130px);
+  }
+
+  .skillIconWrap {
+    width: 50px;
+    height: 50px;
+    font-size: 1.65rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 968px) {
+  .hero {
+    padding: 6rem 0 4rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  .content {
+    text-align: left;
+  }
+
+  .bio {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .buttonGroup,
+  .socialLinks {
+    justify-content: flex-start;
+  }
+
+  .visual {
+    justify-content: flex-end;
+  }
+
+  .orbitStage {
+    --img-size: 260px;
+    width: calc(var(--img-size) + 140px);
+    height: calc(var(--img-size) + 140px);
+  }
+
+  .skillIconWrap {
+    width: 54px;
+    height: 54px;
+    font-size: 1.85rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .orbitStage {
+    --img-size: 280px;
+    width: calc(var(--img-size) + 150px);
+    height: calc(var(--img-size) + 150px);
+  }
+
+  .skillIconWrap {
+    width: 56px;
+    height: 56px;
+    font-size: 1.95rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gradientText {
+    animation: none;
+  }
+}

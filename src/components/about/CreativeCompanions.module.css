@@ -1,0 +1,291 @@
+/* Hero-style responsive Creative Companions */
+.section {
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  padding-top: clamp(2rem, 5vw, 3rem);
+  border-top: 1px solid var(--border-subtle);
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
+  padding: 0 0.25rem;
+}
+
+.title {
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #00f3ff, #ff00e4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  margin: 0 auto;
+  max-width: 36rem;
+  color: var(--text-muted);
+  font-size: clamp(0.9rem, 2.8vw, 1rem);
+  line-height: 1.6;
+  padding: 0 0.5rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.25rem, 3vw, 1.75rem);
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+}
+
+.card:hover {
+  border-color: rgba(0, 243, 255, 0.35);
+  box-shadow: 0 12px 40px rgba(0, 243, 255, 0.1);
+}
+
+.cardVisual {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.photoStage {
+  --img-size: clamp(120px, 38vw, 160px);
+  position: relative;
+  width: calc(var(--img-size) + 24px);
+  height: calc(var(--img-size) + 24px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageWrapper {
+  position: relative;
+  z-index: 1;
+  width: var(--img-size);
+  height: var(--img-size);
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, #00f3ff, #7000ff, #ff00e4);
+  box-shadow:
+    0 0 32px rgba(0, 243, 255, 0.22),
+    0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.imageGlow {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 243, 255, 0.35) 0%, transparent 68%);
+  filter: blur(12px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.imageRing {
+  position: absolute;
+  inset: -12px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 243, 255, 0.35);
+  box-shadow: 0 0 16px rgba(0, 243, 255, 0.12);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.photo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border: 3px solid var(--hero-ring-border);
+}
+
+.photoFallback {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.75rem, 6vw, 2.25rem);
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #00f3ff, #7000ff);
+  border: 3px solid var(--hero-ring-border);
+}
+
+.cardBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.name {
+  font-size: clamp(1.15rem, 4vw, 1.35rem);
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+  color: var(--text-primary);
+}
+
+.role {
+  font-size: clamp(0.75rem, 2.5vw, 0.85rem);
+  font-weight: 600;
+  color: #00f3ff;
+  margin: 0 0 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+[data-theme='light'] .role {
+  color: #006d87;
+}
+
+.bio {
+  font-size: clamp(0.85rem, 2.8vw, 0.95rem);
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+  max-width: 28rem;
+}
+
+.linkedinBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  min-height: 44px;
+  border-radius: 999px;
+  font-size: clamp(0.85rem, 2.5vw, 0.9rem);
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #0077b5, #00a0dc);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.linkedinBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 119, 181, 0.35);
+}
+
+/* Tablet — horizontal card like Hero row */
+@media (min-width: 640px) {
+  .card {
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(1.25rem, 3vw, 2rem);
+    padding: clamp(1.5rem, 3vw, 2rem);
+  }
+
+  .cardVisual {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  .photoStage {
+    --img-size: clamp(130px, 22vw, 150px);
+  }
+
+  .cardBody {
+    align-items: flex-start;
+    text-align: left;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .bio {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
+  }
+}
+
+/* Desktop — two cards side by side */
+@media (min-width: 968px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+
+  .cardVisual {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .photoStage {
+    --img-size: clamp(130px, 14vw, 155px);
+  }
+
+  .cardBody {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Wide desktop — horizontal inside each card */
+@media (min-width: 1100px) {
+  .card {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .cardVisual {
+    width: auto;
+    justify-content: center;
+  }
+
+  .cardBody {
+    align-items: flex-start;
+    text-align: left;
+    flex: 1;
+  }
+
+  .photoStage {
+    --img-size: 150px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,25 @@
+.toggle {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--toggle-bg);
+  color: var(--text-primary);
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.toggle:hover {
+  background: var(--toggle-hover);
+  transform: rotate(15deg);
+}
+
+.toggle:focus-visible {
+  outline: 2px solid #00f3ff;
+  outline-offset: 2px;
+}

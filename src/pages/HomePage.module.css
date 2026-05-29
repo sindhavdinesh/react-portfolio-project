@@ -1,0 +1,21 @@
+.page {
+  width: 100%;
+}
+
+.section {
+  scroll-margin-top: 5.5rem;
+  position: relative;
+}
+
+#home {
+  min-height: 100svh;
+}
+
+#about,
+#projects,
+#skills,
+#gallery,
+#contact {
+  min-height: min(100svh, auto);
+  padding-bottom: clamp(2rem, 5vw, 4rem);
+}
