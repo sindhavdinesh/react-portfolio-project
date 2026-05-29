@@ -87,7 +87,7 @@ const ContactPage = () => {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-                <div style={{ width: '50px', height: '50px', borderRadius: '50%', background: 'rgba(0, 243, 255, 0.1)', display: 'flex', alignItems: 'center', justifySelf: 'center', justifyContent: 'center', color: '#00f3ff' }}>
+                <div style={{ width: '50px', height: '50px', borderRadius: '50%', background: 'rgba(0, 243, 255, 0.1)', display: 'flex', alignItems: 'center', justifySelf: 'center', justifyContent: 'center', color: '#00f3ff', flexShrink: 0 }}>
                   <FaEnvelope size={20} />
                 </div>
                 <div>
@@ -99,7 +99,7 @@ const ContactPage = () => {
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-                <div style={{ width: '50px', height: '50px', borderRadius: '50%', background: 'rgba(255, 0, 228, 0.1)', display: 'flex', alignItems: 'center', justifySelf: 'center', justifyContent: 'center', color: '#ff00e4' }}>
+                <div style={{ width: '50px', height: '50px', borderRadius: '50%', background: 'rgba(255, 0, 228, 0.1)', display: 'flex', alignItems: 'center', justifySelf: 'center', justifyContent: 'center', color: '#ff00e4', flexShrink: 0 }}>
                   <BsTelephoneFill size={20} aria-hidden />
                 </div>
                 <div>
@@ -111,7 +111,7 @@ const ContactPage = () => {
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-                <div style={{ width: '50px', height: '50px', borderRadius: '50%', background: 'rgba(112, 0, 255, 0.1)', display: 'flex', alignItems: 'center', justifySelf: 'center', justifyContent: 'center', color: '#7000ff' }}>
+                <div style={{ width: '50px', height: '50px', borderRadius: '50%', background: 'rgba(112, 0, 255, 0.1)', display: 'flex', alignItems: 'center', justifySelf: 'center', justifyContent: 'center', color: '#7000ff', flexShrink: 0 }}>
                   <FaMapMarkerAlt size={20} />
                 </div>
                 <div>
