@@ -1,15 +1,15 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Sindhav%20Dinesh&fontSize=56&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Creative%20React%20Developer%20%7C%20UI/UX%20Designer&descAlignY=55&descSize=20" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Sindhav%20Dinesh&fontSize=52&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Frontend%20Developer%20%7C%20React%20Specialist&descAlignY=55&descSize=18" width="100%" />
 
 # ⚡ Plain JavaScript React Developer Portfolio
-### 🚀 Built with React 19, JSX, GSAP Parallax, and Custom CSS (Syllabus-Aligned)
+### 🚀 Built with React, JSX, GSAP, and Custom CSS (No TypeScript / Syllabus-Aligned)
 
-**`BCA Student | React Developer | UI/UX Enthusiast | Code. Create. Innovate.`**
+**`Frontend React Developer | BCA Student | UI/UX Enthusiast | Code. Create. Innovate.`**
 
 <br/>
 
-[![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+[![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.4-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
@@ -19,169 +19,211 @@
 
 <br/>
 
-**[🌐 Live Demo](https://void-by-sindhav.vercel.app/) &nbsp;•&nbsp; [📦 GitHub Code](https://github.com/sindhavdinesh/react-portfolio-)**
+### 🌐 [**View Live Portfolio**](https://void-by-sindhav.vercel.app/) &nbsp;•&nbsp; 📦 [**GitHub Repo**](https://github.com/sindhavdinesh/react-portfolio-)
+
+<br/>
 
 </div>
 
 ---
 
-> [!IMPORTANT]
-> **100% SYLLABUS COMPLIANT (NO TYPESCRIPT)**
-> This portfolio is built strictly using **standard JavaScript, JSX, and raw CSS** according to college curriculum guidelines. It contains **zero** TS interfaces, type aliases, React.FC wrappers, or `.d.ts` configurations. It runs purely on standard browser-friendly ES6+ React state and lifecycle hooks.
+## 📸 Preview
+
+<div align="center">
+
+> **A premium, high-fidelity developer portfolio** featuring immersive fluid animations, a custom 3D floating interactive Skill Cloud, seamless Dark/Light theme switching, and a custom CSS responsive structure designed according to clean first-year university standards.
+
+</div>
 
 ---
 
-## 🌟 Key Highlights & Design Aesthetics
+## 🎯 About This Project
 
-- **Curated Harmonious Theme**: Premium glowing dark mode (default) with a beautifully integrated custom light mode using HSL-tailored colors.
-- **Glassmorphic Elements**: Modern translucent cards using background blur filters (`backdrop-filter: blur(10px)`) and subtle border glows.
-- **Interactive Micro-Animations**: Buttons, skill cards, and page elements react dynamically on hover and scroll.
-- **Responsive Layout**: Designed perfectly to look stunning on Mobile Portrait, Mobile Landscape, Tablets, Laptops, and Desktops.
+This project represents my **personal React developer portfolio**, built completely from scratch using standard **JavaScript (ES6+) and JSX** to demonstrate clean structure, modular state flow, and performance-centric layouts. 
 
----
+It is carefully refactored to align 100% with university syllabus requirements (relying on raw CSS, Flexbox, custom Media Queries, and native state management) while maintaining a premium, production-level modern design.
 
-## ✨ Dhansu Features Breakdown
-
-```mermaid
-graph TD
-    A[React App Shell] --> B[ThemeContext - Dark/Light]
-    A --> C[SliderContext - Carousels]
-    A --> D[Routes - React Router]
-    D --> E[Hero Section - Animated Orbiter]
-    D --> F[About Section - Timeline]
-    D --> G[Skills Section - 3D Arena]
-    D --> H[Projects Section - Filter Grid]
-    D --> I[Certificates Section - Lightbox]
-    D --> J[Contact Section - Controlled Form]
-```
-
-### 1. 🌀 Interactive 3D Skill Arena Cloud
-- **Mouse Coordinate Parallax**: GSAP tracks mouse movement inside the arena box and shifts the floating icons dynamically using depth coefficients (`0.3` / `0.55` / `0.8`).
-- **Interactive Tooltips**: Hovering over any floating icon reveals a custom tooltip detailing the category, color scheme, and skill proficiency.
-- **Intelligent Mobile Fallback**: Disables absolute positioning and float animations on screens `< 640px` to convert the arena into a clean, wrapped flexbox grid—completely eliminating mobile layout bugs.
-
-### 2. 🌓 LocalStorage Cached Theme Switcher
-- Configured using React's **Context API** (`ThemeContext`) to share styling parameters globally.
-- Updates custom CSS theme variables instantly without re-rendering the entire DOM layout.
-- Integrates try-catch blocks to safely handle localStorage access in case of disabled browser storage keys.
-
-### 3. 💼 Filterable Projects Showcase
-- Features **6 real projects** (Netflix Clone, E-Commerce, Weather App, Quiz App, Dashboard, Advanced To-Do).
-- Direct **GitHub Code** and **Live Demo** call-to-actions are always visible.
-- Sleek zoom overlays and hover gradient badges keep the user experience premium.
-
-### 🏆 4. Interactive Lightbox Certificates
-- Fully responsive certificates gallery containing Forage job simulations (AWS, JPMorgan Chase) and high school honors.
-- Click a certificate to view a high-resolution version inside a gorgeous, overlay-dismissible **Lightbox**.
+> *"Simplifying complexity, writing scaleable code, and designing interfaces that feel alive."*
 
 ---
 
-## 🛠️ Project Structure
+## ✨ DHANSU FEATURES (What Makes It Stand Out!)
 
-Every source file is placed cleanly inside structured folders, exactly matching a standard college React template:
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🌀 Interactive 3D Skill Arena Cloud
+- **GSAP-powered mouse parallax** that shifts skill icons on X and Y axes depending on depth values (`0.3` / `0.55` / `0.8`).
+- Smooth, micro-animated floating hover effects.
+- Dynamic tooltips displaying custom categories and proficiency ratings.
+- **Mobile Responsive Fallback**: Automatically collapses into a sleek, wrap-around pill grid using CSS Flexbox for optimal mobile layout integrity.
+
+### 🌓 Seamless Dark & Light Mode
+- Integrated using React **Context API** (`ThemeContext`).
+- Smooth transition variables saved directly in CSS custom properties for absolute consistency.
+- Automatically caches preference in local storage for subsequent visits.
+
+### 📂 Filterable Projects Gallery
+- Standard, clean project list with category filtering (Frontend, Styling, Database, Languages, etc.).
+- Image zoom on hover with sleek linear-gradient overlays.
+- Standard clickable **GitHub** and **Live Demo** CTA buttons, always visible.
+
+</td>
+<td width="50%" valign="top">
+
+### 👤 Sleek About & Timeline Section
+- Custom styled personal details showing years of experience, qualification, and contact details.
+- Sleek vertical timeline detailing academic achievements and practical experience.
+- Immersive entrance scroll animations using Framer Motion.
+
+### 🏆 Custom Lightbox Certificate Viewer
+- Beautifully structured Certificates section.
+- **Interactive Lightbox**: Opens full-scale high-resolution certificate images on click with simple overlay close mechanisms.
+- Clean category badges showing Professional, Cloud, and Academic labels.
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛠️ Tech Stack & Configuration
+
+<div align="center">
+
+| Category | Technology | Version | Description |
+|---|---|---|---|
+| ⚛️ **UI Library** | React | `19.2.6` | Modern UI rendering using standard JSX components |
+| 🟨 **Language** | JavaScript (ES6+) | Modern | 100% plain JS, complying with college curriculum rules |
+| ⚡ **Build Tool** | Vite | `8.0.12` | Instant hot module replacement and lightning fast compiling |
+| 🎞️ **Motion Engine** | Framer Motion | `12.40.0` | Immersive animations and layout slide transitions |
+| 🌿 **Scroll Engine** | GSAP | `3.15.0` | Ultra-smooth mouse parallax coordinate shifting |
+| 🔀 **Routing** | React Router DOM | `7.15.1` | Single Page Application multi-page rendering |
+| 🎨 **Styling** | CSS Modules / Vanilla CSS | Standard | Modular styling classes keeping variables fully clean |
+| 🖼️ **Icons** | React Icons | `5.6.0` | Unified font icon packages |
+
+</div>
+
+---
+
+## 📁 Optimized Project Structure
 
 ```
 React portfolio project/
 ├── public/
 │   ├── images/
-│   │   ├── certificates/          # High-res certificate copies
-│   │   └── projects/              # Project screenshots
-│   └── Sindhav_Dinesh_Resume.pdf  # Downloadable PDF Resume
+│   │   ├── certificates/          # High-resolution certificates
+│   │   │   ├── cert-redwhite.jpeg
+│   │   │   ├── cert-forage-jpmorgan.jpeg
+│   │   │   ├── cert-aws-forage.jpeg
+│   │   │   └── cert-hsc.jpeg
+│   │   └── projects/              # Full-scale project screenshots
+│   │       ├── flixvault.png
+│   │       ├── ecommerce.png
+│   │       ├── weather.png
+│   │       ├── quiz.png
+│   │       ├── dashboard.png
+│   │       └── todo.png
+│   └── Sindhav_Dinesh_Resume.pdf
 │
 ├── src/
 │   ├── components/
-│   │   ├── about/                 # Timeline & Bio components
-│   │   ├── certificates/          # Certificate Grid & Lightbox
-│   │   ├── common/                # Reusable UI Buttons & Spinners
-│   │   ├── home/                  # Animated Skill Orbiters & Hero
-│   │   ├── layout/                # Responsive Footer & Navbar
-│   │   ├── projects/              # Project Cards & Filter state
-│   │   ├── skills/                # 3D Skill Arena & Progress Bars
-│   │   └── transitions/           # Framer Motion entrance effects
+│   │   ├── about/                 # Biography & Timeline
+│   │   ├── certificates/          # Certificates & Lightbox Viewer
+│   │   │   ├── Certificates.jsx
+│   │   │   └── Certificates.module.css
+│   │   ├── common/                # Reusable UI Buttons & Loaders
+│   │   ├── home/                  # Animated Hero and Skill Orbiters
+│   │   │   └── Hero/
+│   │   ├── layout/                # Responsive Shell, Navbar & Footer
+│   │   │   ├── Header/
+│   │   │   │   ├── Header.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── MobileMenu.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   └── Layout.jsx
+│   │   ├── projects/              # Projects Showcase
+│   │   │   ├── ProjectCard.jsx
+│   │   │   ├── ProjectCard.module.css
+│   │   │   └── ProjectFilter.jsx
+│   │   └── skills/                # 🛠️ Skills cloud arena
+│   │       ├── SkillsCloud.jsx
+│   │       └── SkillsCloud.module.css
 │   │
-│   ├── context/                   # Context states (Theme, Slider)
-│   ├── data/                      # Clean React mock data (.js files)
-│   ├── pages/                     # Full multi-page shells
-│   ├── routes/                    # Route setups
-│   ├── styles/                    # Global themes & CSS resets
-│   ├── App.jsx                    # Root layout connector
-│   └── main.jsx                   # React bootloader script
+│   ├── context/                   # Context states
+│   │   ├── SliderContext.jsx      # Carousel state
+│   │   └── ThemeContext.jsx       # Theme state (Light/Dark)
+│   │
+│   ├── data/                      # Clean mock data files
+│   │   ├── projectsData.js        # Showcase projects data
+│   │   ├── personalInfo.js        # Personal details
+│   │   └── skillsData.js          # Skills details
+│   │
+│   ├── pages/                     # Route-level pages
+│   │   ├── HomePage.jsx
+│   │   ├── ProjectsPage.jsx
+│   │   └── ContactPage.jsx
+│   │
+│   ├── App.jsx                    # Core App component
+│   └── main.jsx                   # Entry script
 │
 ├── index.html
-├── vite.config.js                 # Plain JavaScript config
+├── vite.config.js                 # Plain JS Vite Config
 └── package.json
 ```
 
 ---
 
-## 🛠️ Unified Tech Stack
+## 🚀 Getting Started
 
-<div align="center">
+### Prerequisites
+- Node.js `≥ 18.0`
+- npm installed locally
 
-| Section | Tech | Purpose | Version |
-|---|---|---|---|
-| ⚛️ | **React** | Virtual DOM rendering & State management | `19.2.6` |
-| 🟨 | **JavaScript** | Standard client logic (ES6+ features) | Modern |
-| ⚡ | **Vite** | Ultra-fast local HMR server & bundling | `8.0.12` |
-| 🎞️ | **Framer Motion** | Physics-based scroll and entry animations | `12.40.0` |
-| 🌿 | **GSAP** | Mouse tracking coordinates & parallax maths | `3.15.0` |
-| 🎨 | **CSS Modules** | Clean, isolated CSS styles without global clashes | Standard |
-| 🖼️ | **React Icons** | Premium vector icon sets | `5.6.0` |
+### Installation
 
-</div>
-
----
-
-## 🚀 Step-by-Step Installation
-
-Follow these easy steps to get this amazing project running on your computer locally:
-
-> [!TIP]
-> Make sure you have **Node.js (version 18 or above)** installed on your machine.
-
-### 1. Open the project
-Open your terminal and navigate to the project directory:
 ```bash
+# 1. Open the project folder
 cd "React portfolio project"
-```
 
-### 2. Install library dependencies
-Run npm install to configure all packages:
-```bash
+# 2. Install all necessary dependencies
 npm install
-```
 
-### 3. Spin up the development server
-Start the HMR dev server:
-```bash
+# 3. Spin up the development server instantly
 npm run dev
 ```
-Open **`http://localhost:3000`** in your browser.
 
-### 4. Build for production
-Generate a highly-compressed, browser-optimized client folder:
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Build for Production
+
 ```bash
+# Vite production compiling (Pure JS)
 npm run build
+
+# Preview build locally
+npm run preview
 ```
 
 ---
 
-## 📜 Verified Certificates
+## 📜 Verified Qualifications
 
-| Qualification | Issuer | Year | Verification |
+| Certificate | Issuer | Year | Verification |
 |---|---|---|---|
-| 🏆 **TECHWAR 2026 — C Tsunami** | Red & White Skill Education | 2026 | [View PDF](public/images/certificates/cert-redwhite.jpeg) |
-| 💼 **Software Engineering Job Simulation** | JPMorgan Chase & Co. via Forage | 2026 | [View PDF](public/images/certificates/cert-forage-jpmorgan.jpeg) |
-| ☁️ **Solutions Architecture Job Simulation** | Amazon Web Services via Forage | 2026 | [View PDF](public/images/certificates/cert-aws-forage.jpeg) |
-| 🎓 **Vishisht Siddhi Sanmanpatra** | B.N.B. High School, Vav | 2025 | [View PDF](public/images/certificates/cert-hsc.jpeg) |
+| 🏆 TECHWAR 2026 — C Tsunami | Red & White Skill Education | 2026 | [View Badge](file:///C:/React%20work/React%20portfolio%20project/public/images/certificates/cert-redwhite.jpeg) |
+| 💼 Software Engineering Job Simulation | JPMorgan Chase & Co. via Forage | 2026 | [View Badge](file:///C:/React%20work/React%20portfolio%20project/public/images/certificates/cert-forage-jpmorgan.jpeg) |
+| ☁️ Solutions Architecture Job Simulation | Amazon Web Services via Forage | 2026 | [View Badge](file:///C:/React%20work/React%20portfolio%20project/public/images/certificates/cert-aws-forage.jpeg) |
+| 🎓 Vishisht Siddhi Sanmanpatra | B.N.B. High School, Vav | 2025 | [View Badge](file:///C:/React%20work/React%20portfolio%20project/public/images/certificates/cert-hsc.jpeg) |
 
 ---
 
-## 💼 Featured Portfolio Projects
+## 💼 Core Showcase Projects
 
-| Project Name | Technology Stack | Codebase | Interactive Demo |
+| Project Name | Technology Stack | Source Code | Interactive Demo |
 |---|---|---|---|
-| 🎬 **FlixVault** (Netflix Clone) | HTML5, CSS3, JavaScript | [GitHub Code](https://github.com/sindhavdinesh/linkdin-project/tree/main/FlixVault) | [Live Demo](https://flixvault-net-clone.netlify.app/) |
+| 🎬 **FlixVault** — Netflix Clone | HTML5, CSS3, JavaScript | [GitHub Code](https://github.com/sindhavdinesh/linkdin-project/tree/main/FlixVault) | [Live Demo](https://flixvault-net-clone.netlify.app/) |
 | 🛒 **E-Commerce Platform** | HTML5, CSS3, JavaScript | [GitHub Code](https://github.com/sindhavdinesh/linkdin-project/tree/main/e-commerce%20product%20page) | [Live Demo](https://ecommerce-platform-app.netlify.app/) |
 | 🌤️ **Weather Portal** | HTML5, CSS3, JavaScript | [GitHub Code](https://github.com/sindhavdinesh/linkdin-project/tree/main/Wheather%20App) | [Live Demo](https://wheather-app-project-linkdin.netlify.app/) |
 | ❓ **Quiz Application** | HTML5, CSS3, JavaScript | [GitHub Code](https://github.com/sindhavdinesh/linkdin-project/tree/main/Quiz%20App) | [Live Demo](https://quiz-app-livein.netlify.app/) |
@@ -190,7 +232,7 @@ npm run build
 
 ---
 
-## 🛠️ Skills Competency Level
+## 🛠️ Comprehensive Skills Radar
 
 ```
 Frontend   ████████████████████  HTML5 (95%) • CSS3 (90%) • JS (88%) • React (85%)
@@ -220,7 +262,7 @@ Creative   █████████████░░░░░░░  Photosh
 
 ## 📄 License
 
-This repository is distributed under the **MIT License**. Feel free to use this as a reference template for building your own outstanding personal portfolio project!
+Distributed under the **MIT License**. Feel free to use this as a reference or template to display your academic projects!
 
 ---
 
@@ -232,6 +274,6 @@ This repository is distributed under the **MIT License**. Feel free to use this 
 
 *Code. Create. Innovate.*
 
-⭐ **Star this repository if you loved the refactored plain-JS design!** ⭐
+⭐ **Star this repo if you loved this design!** ⭐
 
 </div>
