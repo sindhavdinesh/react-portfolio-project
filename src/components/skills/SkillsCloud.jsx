@@ -151,7 +151,7 @@ const SkillsCloud = () => {
           transition={{ duration: 0.7 }}
         >
           <div className={styles.arenaTopRow}>
-            <span className={styles.arenaHint}>⚡ Interactive Skill Cloud — hover to explore</span>
+            <span className={styles.arenaHint}>⚡ Interactive Skill Sec — hover to explore</span>
             <span className={styles.arenaCount}>{skills.length} Technologies</span>
           </div>
 
