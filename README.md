@@ -3,8 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Sindhav%20Dinesh&fontSize=52&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Frontend%20Developer%20%7C%20React%20Specialist&descAlignY=55&descSize=18" width="100%" />
 
 # ⚡ Plain JavaScript React Developer Portfolio
-### 🚀 Built with React, JSX, GSAP, and Custom CSS (No TypeScript / Syllabus-Aligned)
-
+### 🚀 Built with React
 **`Frontend React Developer | BCA Student | UI/UX Enthusiast | Code. Create. Innovate.`**
 
 <br/>
